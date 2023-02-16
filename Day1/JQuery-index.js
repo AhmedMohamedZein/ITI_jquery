@@ -12,7 +12,7 @@ function changePhoto () {
 }
 let photoInterval = setInterval(()=>{
     imag.fadeOut(2000 , changePhoto);
-});
+},2000);
 getButton.on("click" , ()=>{
     clearInterval(photoInterval);
 });
