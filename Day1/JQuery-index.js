@@ -16,3 +16,6 @@ let photoInterval = setInterval(()=>{
 getButton.on("click" , ()=>{
     clearInterval(photoInterval);
 });
+
+///////////////////////////////////////////////////////
+

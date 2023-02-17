@@ -11,6 +11,7 @@ h1{
     text-align: center;
     flex-basis: 100%;
 }
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -20,28 +21,33 @@ h1{
 button{
     background-color: #964d4d;
     color: #F1DBBF;
+    filter: drop-shadow(10px 10px 10px black);
     font-size: large;
     font-weight: bold;
     border-radius: 15%;
+    border: none;
     margin-top: 5%;
     height: 8%;
-    width: 20%;
-    cursor: pointer;
-}
-
-button{
-    background-color: #964d4d;
-    color: #F1DBBF;
-    filter: drop-shadow(10px 10px 10px black);
-    border: none;
-    border-radius: 15%;
-    margin-top: 5%;
-    height: 7%;
     width: 15%;
+    cursor: pointer;
 }
 
 #taksOne{
     flex-basis: 100%;
     border-radius: 5%;
     filter: drop-shadow(10px 10px 10px black);
+}
+
+ul {
+    display: flex;
+    flex-basis: 65%;
+    justify-content: space-between ;
+    list-style: none;
+}
+
+ul button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
 }
