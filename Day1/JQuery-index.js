@@ -17,5 +17,30 @@ getButton.on("click" , ()=>{
     clearInterval(photoInterval);
 });
 
-///////////////////////////////////////////////////////
 
+let imagOneList = $("#first_imag");
+let imagTwoList = $("#second_imag");
+let imagThreeList = $("#third_imag");
+
+var textToAdd = "<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>";
+
+function checkIfTheTextExists() {
+    if  ( $(this).find("p").length === 0 ) {
+        $(this).append('<p class="text_box"></p>');
+        if ($(this).find(".text_box").length === 0){
+            alert("You have problem in your code wrong logic !!");
+        }
+        else {
+            $(this).find("p").append(textToAdd);
+            $(this).find("p").find("span").attr("class","text");
+        }
+    }
+    else {
+        $(this).find("p").remove();
+    }
+}
+
+imagOneList.on("click" , checkIfTheTextExists);
+imagTwoList.on("click" , checkIfTheTextExists);
+imagThreeList.on("click" ,checkIfTheTextExists);
+// imagOneList.find(".text").length

@@ -40,8 +40,8 @@ button{
 
 ul {
     display: flex;
-    flex-basis: 65%;
-    justify-content: space-between ;
+    flex-basis: 80%;
+    justify-content: space-between;
     list-style: none;
 }
 
@@ -50,4 +50,29 @@ ul button {
     cursor: pointer;
     appearance: none;
     background-color: inherit;
+    flex-basis: 100%;
+    /* width: 0vh; */
+    height: 40vh;
+}
+
+li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-around;
+    justify-content: center;
+}
+
+.text_box {
+    
+    border: solid 4px #964d4d;
+    border-radius: 7%;
+}
+.text {
+    /* margin: 20px; */
+    font-family: 'Times New Roman', Times, serif;
+    color: #F1DBBF ;
+}
+
+p {
+    width: 35vh;
 }
