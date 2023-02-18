@@ -46,14 +46,14 @@
 .tasks-container div {
     margin: 1em;
     width: 50vh;
-    height: 5vh;
+    /* height: 5vh; */
     display: flex;
 }
 
 .tasks-container div span {
-    padding-top: 7px;
+    padding: 7px;
     width: 30vh;
-    height: 5vh;
+    /* height: 5vh; */
     border-radius: 4vh;
     border: none;
     background-color: #6F9A8D;
@@ -94,3 +94,5 @@
     border: none;
     cursor: pointer;
 }
+
+
