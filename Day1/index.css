@@ -76,3 +76,7 @@ li {
 p {
     width: 35vh;
 }
+
+.red {
+    background-color: red !important;
+}

@@ -42,7 +42,12 @@ function checkIfTheTextExists(e) {
     e.stopPropagation();
 }
 
-imagOneList.on("click" , checkIfTheTextExists);
+imagOneList.on("click" , ()=>{
+    console.log(document);
+    $("#second_imag").toggleClass("red",function(){
+        alert("helloooooe");  
+    });
+});
 imagTwoList.on("click" , checkIfTheTextExists);
 imagThreeList.on("click" ,checkIfTheTextExists);
 // imagOneList.find(".text").length
