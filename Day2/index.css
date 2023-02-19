@@ -63,6 +63,25 @@
     flex-grow: 1;
 }
 
+#Add:hover {
+    width: 8vh;
+    height: 5vh;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    background-color: #ce6f38;
+    border: none;
+    cursor: pointer;
+}
+
+#Add {
+    width: 8vh;
+    height: 5vh;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    background-color: #FFA36C;
+    border: none;
+}
+
 .tasks-container button {
     width: 5vh;
     height: inherit;
