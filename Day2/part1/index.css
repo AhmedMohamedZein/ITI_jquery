@@ -80,6 +80,7 @@
     margin-right: 0.1em;
     background-color: #FFA36C;
     border: none;
+    border-radius: 4vh;
 }
 
 .tasks-container button {
